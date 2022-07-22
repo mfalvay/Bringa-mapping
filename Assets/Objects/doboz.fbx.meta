@@ -3,7 +3,17 @@ guid: 63fee8a6abd969a4ea68a133b047c819
 ModelImporter:
   serializedVersion: 22102
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: doboz_A
+    second: {fileID: 2100000, guid: a37698b5e0046314090fa84e104bbfa7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: doboz_B
+    second: {fileID: 2100000, guid: 6d487bf7261d377478983e9907ac1040, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

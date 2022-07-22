@@ -313,7 +313,7 @@ Camera:
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: -0.5, y: 0}
+  m_LensShift: {x: 0.3, y: -0.26}
   m_FocalLength: 20.78461
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -543,7 +543,7 @@ Camera:
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0.5, y: 0}
+  m_LensShift: {x: 0.11, y: -0.25}
   m_FocalLength: 20.78461
   m_NormalizedViewPortRect:
     serializedVersion: 2

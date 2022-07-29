@@ -79,7 +79,12 @@ Material:
     - _korok: 10
     - _radius: 3.9
     - _rotation: 1
+<<<<<<< Updated upstream
     - _textures_blend: 3
     - _tile_offset: 866.15295
+=======
+    - _textures_blend: 0
+    - _tile_offset: 0
+>>>>>>> Stashed changes
     m_Colors: []
   m_BuildTextureStacks: []

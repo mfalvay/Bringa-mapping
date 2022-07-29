@@ -107,17 +107,17 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _color: 1
-    - _rotate_uv: -1.7
+    - _color: 80.3
+    - _rotate_uv: -19.1
     - _stripe_01: 0.872
     - _texture_blend: 0
     - _texture_blend_02: 0
     - _texture_blend_03: 1
     - _texture_blend_04: 0
     - _textures_blend: 0
-    - _tile_offset: -483.4
-    - _tiling: 19.19
-    - _uv_mix: 0.119
+    - _tile_offset: -458.87
+    - _tiling: 15.9
+    - _uv_mix: 0.318
     m_Colors: []
   m_BuildTextureStacks: []
 --- !u!114 &7336163725707033594

@@ -80,6 +80,6 @@ Material:
     - _radius: 3.9
     - _rotation: 1
     - _textures_blend: 3
-    - _tile_offset: 437.2
+    - _tile_offset: 866.15295
     m_Colors: []
   m_BuildTextureStacks: []

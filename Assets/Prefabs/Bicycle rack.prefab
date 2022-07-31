@@ -17,6 +17,9 @@ GameObject:
   - component: {fileID: 8431148115237288786}
   - component: {fileID: 8431148115237288787}
   - component: {fileID: 8431148115237288784}
+  - component: {fileID: 7223371552139404684}
+  - component: {fileID: 6808837288125340090}
+  - component: {fileID: 4943288502855850409}
   m_Layer: 0
   m_Name: Bicycle rack
   m_TagString: Untagged
@@ -220,3 +223,54 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: b45808b59bfc3ac47832e748d272c304, type: 2}
+--- !u!114 &7223371552139404684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8431148115237288785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600402fae7a012543b3a5b99984273a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bicycleRack: {fileID: 11400000, guid: 862d9440b988a9b459849729355eabf5, type: 2}
+  channel: BicycleA
+  testEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6808837288125340090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8431148115237288785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600402fae7a012543b3a5b99984273a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bicycleRack: {fileID: 11400000, guid: 42e3d9e7452c5594aa45c92b7be6c1ee, type: 2}
+  channel: BicycleB
+  testEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4943288502855850409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8431148115237288785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 600402fae7a012543b3a5b99984273a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bicycleRack: {fileID: 11400000, guid: 200e2a3951102284f88ef91aa6af0e06, type: 2}
+  channel: BicycleC
+  testEvent:
+    m_PersistentCalls:
+      m_Calls: []

@@ -46,6 +46,7 @@ public class WebSocketLink : MonoBehaviour
 
     string msg;
     bool flag;
+
     void Awake()
     {
         if (server != null)
@@ -91,6 +92,7 @@ public class WebSocketLink : MonoBehaviour
         //testEvent.Invoke();
         flag = true;
         msg = s;
+
 
     }
 

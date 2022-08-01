@@ -23,28 +23,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _SampleTexture2D_07122960c922492d8233b1d0c88e729f_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 4c87d606d2db76340b581b5dd0a4d4f5, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_0b6b9b00bfa04fb29692bf6cec7384f2_Texture_1:
         m_Texture: {fileID: 2800000, guid: 4624a5413f0191b41bac68c231c4b8c2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_0b8da31171df46d087223c5a89a9972d_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 19642d26f755ad641a2f4f9a8e9eb34e, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_0cf7965556084b859f41110a31650882_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 35f8079f48a676b4c81a48863a9434ed, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_1e8e39bdece240cf9bae3c6a52700865_Texture_1:
         m_Texture: {fileID: 2800000, guid: 43cce2d87633b50409c232da5c8b7d86, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_376d61e746894d9188e9cb813f1cdb5c_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 3daaede11006ea145b31034a943eccf8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_39e0fb67100a48fcb1a0e58847d5eb16_Texture_1:
@@ -59,16 +43,8 @@ Material:
         m_Texture: {fileID: 2800000, guid: 35f8079f48a676b4c81a48863a9434ed, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_4fa9f7b98ad747179ec443f369e6f147_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 163e7ccccb02d974f85f67efa026424d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_75229379d59b434c900a7a7a2c6cc4b0_Texture_1:
         m_Texture: {fileID: 2800000, guid: 1c174a97e6ab9c246949742c6aeac0d3, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_8bd28163a21b4bc3b612741d5c4d7495_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 6a832de074f9ca94694ab499dad00d76, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_9a11677a375f4db58a9defc0c8622012_Texture_1:
@@ -85,10 +61,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_caaa3d76fc53436a87ca021413a459d6_Texture_1:
         m_Texture: {fileID: 2800000, guid: 2972e0a3b6c139740bd5fba19f3ccf83, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_e8fbace8a1c048909a905f24a3a35b97_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 35f8079f48a676b4c81a48863a9434ed, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_ed3474f757254ed597890c298dcc5e20_Texture_1:
@@ -111,37 +83,13 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-<<<<<<< Updated upstream:Assets/Shaders/doboz_material.mat
-    - _color: 80.3
-    - _rotate_uv: -19.1
-=======
-    - _blend_time: 300
-    - _color: 1
-    - _fade: 0.516
-    - _rotate_uv: 100
->>>>>>> Stashed changes:Assets/Shaders/doboz_material_1.mat
-    - _stripe_01: 0.872
-    - _tekeres: 0
-    - _texture_blend: 0
-    - _texture_blend_02: 0
-    - _texture_blend_03: 1
-    - _texture_blend_04: 0
-    - _textures_blend: 0
-<<<<<<< Updated upstream:Assets/Shaders/doboz_material.mat
-    - _tile_offset: -458.87
-    - _tiling: 15.9
-    - _uv_mix: 0.318
-=======
-    - _tile_offset: 321.62
-    - _tile_size: 0
-    - _tiling: 1
+    - _blend_time: 396.82
+    - _fade: 1
+    - _tile_offset: 303.92
     - _uv_mix: 0
-    - _xx_offset: 0.52
-    - _xx_scale: 0.3
->>>>>>> Stashed changes:Assets/Shaders/doboz_material_1.mat
     m_Colors: []
   m_BuildTextureStacks: []
---- !u!114 &7336163725707033594
+--- !u!114 &1376641111356065161
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71510169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4308974505761553561, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+  m_PrefabInstance: {fileID: 4371073267018704093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &241028061
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +188,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &287899016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4308974505203779130, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+  m_PrefabInstance: {fileID: 4371073267018704093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!850595691 &516823433
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -405,6 +415,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4308974505203779128, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[4].m_Value
+      value: 1.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308974505203779128, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[5].m_Value
+      value: 399.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308974505203779128, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[6].m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308974505203779128, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[7].m_Value
+      value: 48.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308974505203779129, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308974505203779130, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5496269408307663549, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -469,6 +503,36 @@ PrefabInstance:
       value: Bicycle rack
       objectReference: {fileID: 0}
     - target: {fileID: 8431148115237288787, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Primary
+        speed","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Secondary
+        speed","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Tertiary
+        speed","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Maximum
+        speed","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Distance
+        travelled","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Wall
+        container","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Box
+        1","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Box
+        2","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"An
+        arc","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Grid","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Amoeba","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Amoeba
+        controller","value":{"$content":6,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431148115237288787, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431148115237288787, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
       value: 
       objectReference: {fileID: 1688185756}
@@ -483,11 +547,19 @@ PrefabInstance:
     - target: {fileID: 8431148115237288787, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
       propertyPath: _data._objectReferences.Array.data[3]
       value: 
-      objectReference: {fileID: 1484731778}
+      objectReference: {fileID: 730315500}
     - target: {fileID: 8431148115237288787, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
       propertyPath: _data._objectReferences.Array.data[4]
       value: 
-      objectReference: {fileID: 730315500}
+      objectReference: {fileID: 287899016}
+    - target: {fileID: 8431148115237288787, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
+      propertyPath: _data._objectReferences.Array.data[5]
+      value: 
+      objectReference: {fileID: 71510169}
+    - target: {fileID: 8431148115237288787, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
+      propertyPath: _data._objectReferences.Array.data[6]
+      value: 
+      objectReference: {fileID: 1484731778}
     - target: {fileID: 8431148115237288792, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
       propertyPath: m_RootOrder
       value: 1

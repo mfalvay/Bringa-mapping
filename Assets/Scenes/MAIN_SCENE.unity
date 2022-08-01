@@ -256,6 +256,11 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaAO: 1
   m_PVRTiledBaking: 0
   m_NumRaysToShootPerTexel: -1
+--- !u!1 &673688354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4308974506053794458, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+  m_PrefabInstance: {fileID: 4371073267018704093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &730315500 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3967078266864937770, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
@@ -399,6 +404,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3967078265615140669, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
   m_PrefabInstance: {fileID: 4371073267018704093}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2089264865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4308974506438786004, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+  m_PrefabInstance: {fileID: 4371073267018704093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4371073267018704093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -438,6 +448,22 @@ PrefabInstance:
     - target: {fileID: 4308974505203779130, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308974505761553543, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[2].m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308974506438786001, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -52.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308974506438786002, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Value
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308974506438786002, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
+      propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[1].m_Value
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5496269408307663549, guid: 2177669a0be3f4e4b90ea04e562cebed, type: 3}
       propertyPath: m_RootOrder
@@ -526,11 +552,15 @@ PrefabInstance:
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Amoeba","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Amoeba
         controller","value":{"$content":6,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Particle
+        hex","value":{"$content":7,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Particle
+        vertical","value":{"$content":8,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 8431148115237288787, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8431148115237288787, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
@@ -560,6 +590,14 @@ PrefabInstance:
       propertyPath: _data._objectReferences.Array.data[6]
       value: 
       objectReference: {fileID: 1484731778}
+    - target: {fileID: 8431148115237288787, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
+      propertyPath: _data._objectReferences.Array.data[7]
+      value: 
+      objectReference: {fileID: 2089264865}
+    - target: {fileID: 8431148115237288787, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
+      propertyPath: _data._objectReferences.Array.data[8]
+      value: 
+      objectReference: {fileID: 673688354}
     - target: {fileID: 8431148115237288792, guid: 1e39dddb0ec9e7944ae210351d940bdf, type: 3}
       propertyPath: m_RootOrder
       value: 1

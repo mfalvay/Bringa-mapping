@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: doboz_shader_v6
+  m_Shader: {fileID: -6465566751694194690, guid: 61ff2ae36a00b9f42bd483915b4d97d2, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_159a8432f14f43b1b480a85aa318c089_Texture_1:
+        m_Texture: {fileID: 2800000, guid: b0087401a2b3ef74ca6b49c06cdb5e8c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_16f8afc613254d29952d41709ef370c8_Texture_1:
+        m_Texture: {fileID: 2800000, guid: a90609e43400fe141b236f13d994865e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_28d2f22a7c104466918c0956264e263e_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 1c174a97e6ab9c246949742c6aeac0d3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2f3b9404a48c40038894ccbfe83479dc_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 32b426abf2caf474abe5ae4240b1a5e9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_623992e8339f4dff80081644001391b3_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 4c87d606d2db76340b581b5dd0a4d4f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_841f63e3b48d450f995c09cb8a984830_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 4624a5413f0191b41bac68c231c4b8c2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_85fd12fe6d7e43dfa187aff205aae70b_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 5d8faa00bd436894c8bdc7a8d7a76f28, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_b52e018b7cb84dcb95269b2d02063ca8_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 345d959e9168a824fbb623ae10cddd31, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_b86db9c8a66148879d5dcfc6277eba55_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 4eaf9ddd0aaa1a5409a476fe8bdbb5ed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_d5cf24ad490f4237ab4e88b486f2b6fc_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 4c87d606d2db76340b581b5dd0a4d4f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_d658c59a3fe8479f8ee56926e8b9debe_Texture_1:
+        m_Texture: {fileID: 2800000, guid: da10fdd154589d94d92a3aa54cec2dc2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_deb1ade959ab4910a119360443e39747_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 35f8079f48a676b4c81a48863a9434ed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_fe0a2c9441554cd389e8c85919ebb5de_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 4eaf9ddd0aaa1a5409a476fe8bdbb5ed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _fade: 1
+    - _tiling: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
+--- !u!114 &4658185679374731814
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 6

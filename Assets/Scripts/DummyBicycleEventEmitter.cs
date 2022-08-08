@@ -14,7 +14,7 @@ public class DummyBicycleEventEmitter : MonoBehaviour
         if (Input.GetKeyDown(DummyActionKey))
         {
             Debug.Log($"{DummyActionKey} pressed");
-            bicycleRack.Raise();
+            bicycleRack.Raise("-1");
         }
     }
 }

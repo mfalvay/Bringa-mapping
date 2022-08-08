@@ -101,22 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bicycleRack: {fileID: 11400000, guid: 862d9440b988a9b459849729355eabf5, type: 2}
-  onEventTrigged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6406823449641912942}
-        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.FlowGraph,
-          Unity.VisualScripting.Flow
-        m_MethodName: TriggerUnityEvent
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TickA
-          m_BoolArgument: 0
-        m_CallState: 2
+  interval: 10000
 --- !u!114 &8431148115237288789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,22 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bicycleRack: {fileID: 11400000, guid: 42e3d9e7452c5594aa45c92b7be6c1ee, type: 2}
-  onEventTrigged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6406823449641912942}
-        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.FlowGraph,
-          Unity.VisualScripting.Flow
-        m_MethodName: TriggerUnityEvent
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TickB
-          m_BoolArgument: 0
-        m_CallState: 2
+  interval: 10000
 --- !u!114 &8431148115237288786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,22 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bicycleRack: {fileID: 11400000, guid: 200e2a3951102284f88ef91aa6af0e06, type: 2}
-  onEventTrigged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6406823449641912942}
-        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.FlowGraph,
-          Unity.VisualScripting.Flow
-        m_MethodName: TriggerUnityEvent
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TickC
-          m_BoolArgument: 0
-        m_CallState: 2
+  interval: 10000
 --- !u!114 &7223371552139404684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,9 +144,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bicycleRack: {fileID: 11400000, guid: 862d9440b988a9b459849729355eabf5, type: 2}
   channel: BicycleA
-  testEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &6808837288125340090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,9 +158,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bicycleRack: {fileID: 11400000, guid: 42e3d9e7452c5594aa45c92b7be6c1ee, type: 2}
   channel: BicycleB
-  testEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &4943288502855850409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,9 +172,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bicycleRack: {fileID: 11400000, guid: 200e2a3951102284f88ef91aa6af0e06, type: 2}
   channel: BicycleC
-  testEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &8431148115237288787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,8 +185,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Speed
-      minimum","value":{"$content":0.05,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Listener
+      1","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"BicycleEventListener,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Listener
+      2","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"BicycleEventListener,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Listener
+      3","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"BicycleEventListener,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Speed
+      minimum","value":{"$content":0.3,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Primary
       speed","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Secondary
@@ -252,23 +204,38 @@ MonoBehaviour:
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Distance
       travelled","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Wall
-      container","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Box
-      1","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Box
-      2","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      container","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"An
-      arc","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Grid","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Amoeba","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      arc","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Grid","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Amoeba","value":{"$content":6,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Amoeba
-      controller","value":{"$content":6,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      controller","value":{"$content":7,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Particle
-      hex","value":{"$content":7,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      hex","value":{"$content":8,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Particle
-      vertical","value":{"$content":8,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      vertical","value":{"$content":9,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Box
+      1","value":{"$content":10,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Box
+      2","value":{"$content":11,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Box
+      3","value":{"$content":12,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Box
+      4","value":{"$content":13,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Box
+      5","value":{"$content":14,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Box
+      6","value":{"$content":15,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
+    - {fileID: 8431148115237288788}
+    - {fileID: 8431148115237288789}
+    - {fileID: 8431148115237288786}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
@@ -307,7 +274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bicycleRack: {fileID: 11400000, guid: 862d9440b988a9b459849729355eabf5, type: 2}
-  speed: 4
+  maxRatePerSecond: 20
+  rate: 0
 --- !u!114 &1790894918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,7 +289,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bicycleRack: {fileID: 11400000, guid: 42e3d9e7452c5594aa45c92b7be6c1ee, type: 2}
-  speed: 0
+  maxRatePerSecond: 20
+  rate: 0
 --- !u!114 &1790894919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,7 +304,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bicycleRack: {fileID: 11400000, guid: 200e2a3951102284f88ef91aa6af0e06, type: 2}
-  speed: 0
+  maxRatePerSecond: 20
+  rate: 0
 --- !u!114 &1790894920
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public delegate void BicycleSensorTickCallback();
+public delegate void BicycleSensorTickCallback(string data);
 
 [CreateAssetMenu(fileName = "New Bicycle Rack", menuName = "Bicycle Rack/New Bycicle Rack")]
 public class BicycleRack : ScriptableObject
@@ -19,9 +19,9 @@ public class BicycleRack : ScriptableObject
         OnTick -= callback;
     }
 
-    public void Raise()
+    public void Raise(string data)
     {
-        OnTick?.Invoke();
+        OnTick?.Invoke(data);
     }
 
 }

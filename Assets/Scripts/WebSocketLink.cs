@@ -42,7 +42,6 @@ public class WebSocketLink : MonoBehaviour
     public BicycleRack bicycleRack;
 
     public string channel = "test";
-    public UnityEvent testEvent;
 
     string msg;
     bool flag;
@@ -80,7 +79,7 @@ public class WebSocketLink : MonoBehaviour
             flag = !flag;
             Debug.Log(msg);
 
-            bicycleRack.Raise();
+            bicycleRack.Raise(msg);
         }
         
     }

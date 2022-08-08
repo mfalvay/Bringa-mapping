@@ -5,8 +5,9 @@ using UnityEngine;
 public class AutoCycle : MonoBehaviour
 {
     public BicycleRack bicycleRack;
+    public float maxRatePerSecond = 20;
     [Range(0, 1)]
-    public float speed = 0;
+    public float rate = 0;
     float lastRan = 0;
     // Start is called before the first frame update
     void Start()
@@ -17,9 +18,10 @@ public class AutoCycle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (speed > 0 && Time.time -lastRan > (1/Mathf.Lerp(0,10,speed))) {
+        if (rate > 0 && Time.time - lastRan > 1/(maxRatePerSecond*rate))
+        {
+            bicycleRack.Raise((1000.0 / (maxRatePerSecond * rate)).ToString());
             lastRan = Time.time;
-            bicycleRack.Raise();
         }
         
     }

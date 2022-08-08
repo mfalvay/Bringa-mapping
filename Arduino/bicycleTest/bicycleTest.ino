@@ -89,6 +89,7 @@ void setup() {
   }
 
   WiFiMulti.addAP("Mokustorony24", "seGGembt1982");
+  WiFiMulti.addAP("UPC2DFAA71", "wyQs3nnjmhef");
 
   //WiFi.disconnect();
   while (WiFiMulti.run() != WL_CONNECTED) {
@@ -96,7 +97,7 @@ void setup() {
   }
 
   // server address, port and URL
-  webSocket.begin("192.168.1.4", 81, "/BicycleA");
+  webSocket.begin("192.168.0.81", 81, "/BicycleA");
 
   // event handler
   webSocket.onEvent(webSocketEvent);

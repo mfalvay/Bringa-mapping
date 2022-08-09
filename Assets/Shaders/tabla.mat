@@ -81,6 +81,7 @@ Material:
     - _Float: 9653
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _bike: 17841
+    - _bike: 0
+    - _fade: 1
     m_Colors: []
   m_BuildTextureStacks: []

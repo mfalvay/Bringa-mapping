@@ -41,9 +41,9 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _blend: 0.606
-    - _fade: 0.863
-    - _thickness: 0.8
-    - _tile_movement: 166.92
+    - _fade: 1
+    - _thickness: 0.3
+    - _tile_movement: 336.6
     - _tile_offst: 1114.3
     - _tiling: 0.7
     m_Colors: []

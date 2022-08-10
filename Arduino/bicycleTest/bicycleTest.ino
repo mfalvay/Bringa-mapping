@@ -13,6 +13,7 @@
 #include <WebSocketsClient.h>
 
 #include <Hash.h>
+#include "EEPROM.h"
 
 ESP8266WiFiMulti WiFiMulti;
 WebSocketsClient webSocket;
@@ -20,7 +21,17 @@ WebSocketsClient webSocket;
 #define USE_SERIAL Serial
 
 volatile bool flag = false;
-volatile unsigned long diff = 0;
+
+String channels[] = {
+  "/BicycleA",
+  "/BicycleB",
+  "/BicycleC"
+};
+
+byte chn = 255;
+
+volatile unsigned long intervals[6] = {10000, 10000, 10000, 10000, 10000, 10000};
+int curs = 0;
 
 void webSocketEvent(WStype_t type, uint8_t * payload, size_t length) {
 
@@ -64,18 +75,21 @@ void webSocketEvent(WStype_t type, uint8_t * payload, size_t length) {
 void IRAM_ATTR onMagnetDetect() {
   static unsigned long lastDetect = 0;
   unsigned long now = millis();
-  diff = now - lastDetect;
-  if (diff > 50) {
+  unsigned long diff = now - lastDetect;
+  if (diff > 10) {
+    intervals[curs] = diff > 10000 ? 10000 : diff;
+    curs++;
+    if (curs >= 6) {
+      curs = 0;
+    }
     flag = true;
   }
   lastDetect = now;
 }
 
 void setup() {
-  // USE_SERIAL.begin(921600);
-  USE_SERIAL.begin(115200);
-
-  //Serial.setDebugOutput(true);
+  Serial.begin(115200);
+  
   USE_SERIAL.setDebugOutput(true);
 
   USE_SERIAL.println();
@@ -87,9 +101,25 @@ void setup() {
     USE_SERIAL.flush();
     delay(1000);
   }
+  
+  EEPROM.begin(1);
+  //EEPROM.put(0, 0);
+  //EEPROM.commit();
 
+  Serial.print("Channel: ");
+  EEPROM.get(0, chn);
+  Serial.println(channels[chn]);
+  EEPROM.end();
+
+
+  // USE_SERIAL.begin(921600);
+
+  //Serial.setDebugOutput(true);
+
+
+  WiFiMulti.addAP("bringamapping", "zymzymstudio");
   WiFiMulti.addAP("Mokustorony24", "seGGembt1982");
-  WiFiMulti.addAP("UPC2DFAA71", "wyQs3nnjmhef");
+  //WiFiMulti.addAP("UPC2DFAA71", "wyQs3nnjmhef");
 
   //WiFi.disconnect();
   while (WiFiMulti.run() != WL_CONNECTED) {
@@ -97,7 +127,7 @@ void setup() {
   }
 
   // server address, port and URL
-  webSocket.begin("192.168.0.81", 81, "/BicycleA");
+  webSocket.begin("192.168.0.100", 81, channels[chn]);
 
   // event handler
   webSocket.onEvent(webSocketEvent);
@@ -113,21 +143,35 @@ void setup() {
   // expect pong from server within 3000 ms
   // consider connection disconnected if pong is not received 2 times
   //webSocket.enableHeartbeat(15000, 3000, 3);
-  pinMode(D5, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(D5), onMagnetDetect, FALLING);
+  pinMode(D1, INPUT_PULLUP);
+  pinMode(D2, OUTPUT);
+  digitalWrite(D2, LOW);
+  attachInterrupt(digitalPinToInterrupt(D1), onMagnetDetect, FALLING);
+
 }
 
 void loop() {
+  static unsigned long lastSent = 0;
+  static unsigned long sendInterval = 500;
+  unsigned long now = millis();
+
   webSocket.loop();
 
-  if (flag) {
+  if (now - lastSent > sendInterval) {
     flag = false;
     if (webSocket.isConnected()) {
       Serial.println("Sending");
-      String msg = String(diff);
+      unsigned long sum = 0;
+      for (int i = 0; i < 6; i++) {
+        sum += intervals[i];
+        intervals[i] = intervals[i] > 10000 ? 10000 : intervals[i] * 1.1;
+      }
+      sum /= 6;
+      String msg = String(sum);
       webSocket.sendTXT(msg);
     } else {
       Serial.println("Not connected");
     }
+    lastSent = now;
   }
 }

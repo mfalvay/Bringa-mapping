@@ -77,7 +77,7 @@ public class WebSocketLink : MonoBehaviour
     {
         if (flag) {
             flag = !flag;
-            Debug.Log(msg);
+            Debug.Log($"{channel}: {msg}");
 
             bicycleRack.Raise(msg);
         }

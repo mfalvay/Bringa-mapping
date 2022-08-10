@@ -10,7 +10,7 @@ public class CameraHelper : MonoBehaviour
     public float VerticalShift { get => camera.lensShift.y; set => camera.lensShift = new Vector2(camera.lensShift.x, value); }
     public float FOV { get => camera.fieldOfView; set => camera.fieldOfView = value; }
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         camera = GetComponentInChildren<Camera>();
     }

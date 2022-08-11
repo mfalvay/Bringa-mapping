@@ -61,7 +61,7 @@ Material:
     - _QueueOffset: 0
     - _rotation: 1
     - _textures_blend: 3
-    - _tile_offset: 0
+    - _tile_offset: 639.8002
     m_Colors: []
   m_BuildTextureStacks: []
 --- !u!114 &4220872858347391784

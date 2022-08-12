@@ -25,6 +25,7 @@ public class GUIParameterLink : MonoBehaviour
     public FloatEvent onValueChanged = new FloatEvent();
 
     public float value = 0;
+    public bool updated = false;
 
     // Start is called before the first frame update
 
@@ -43,6 +44,7 @@ public class GUIParameterLink : MonoBehaviour
         if (!initialized)
         {
             initialized = true;
+            persistentData.values.Clear();
             LoadAll();
         }
     }
@@ -52,6 +54,7 @@ public class GUIParameterLink : MonoBehaviour
         inputField.SetTextWithoutNotify(val.ToString("F"));
         onValueChanged.Invoke(val);
         value = val;
+        updated = true;
     }
 
     void OnFieldChanged(string val)
@@ -61,6 +64,7 @@ public class GUIParameterLink : MonoBehaviour
             slider.SetValueWithoutNotify(result);
             onValueChanged.Invoke(result);
             value = result;
+            updated = true;
         }
     }
     public void SetParameterWithoutNotify(float val)
@@ -68,6 +72,7 @@ public class GUIParameterLink : MonoBehaviour
         inputField.SetTextWithoutNotify(val.ToString("F"));
         slider.SetValueWithoutNotify(val);
         value = val;
+        updated = true;
     }
 
     public void SetParameter(float val)
@@ -75,6 +80,7 @@ public class GUIParameterLink : MonoBehaviour
         OnSliderChanged(val);
         OnFieldChanged(val.ToString());
         value = val;
+        updated = true;
     }
     static public void LoadAll()
     {
@@ -131,9 +137,10 @@ public class GUIParameterLink : MonoBehaviour
 
         foreach (GUIParameterLink link in GameObject.FindObjectsOfType<GUIParameterLink>(true))
         {
-            string key = $"{link.transform.parent.name}/{link.transform.name}";
-            string value = link.value.ToString("F4");
-            persistentData.values[key] = value;
+                string key = $"{link.transform.parent.name}/{link.transform.name}";
+                string value = link.value.ToString("F4");
+                persistentData.values[key] = value;
+          
         }
 
         ISerializer serializer = new SerializerBuilder().Build();
